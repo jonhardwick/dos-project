@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "DOS-Watcom",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/WATCOM/h"
+            ],
+            "defines": [
+                "_DOS",
+                "__WATCOMC__=1300",
+                "__I86__",
+                "far=__far",
+                "_int86=int86",
+                "near=__near",
+                "huge=__huge",
+                "interrupt=__interrupt",
+                "cdecl=__cdecl",
+                "_M_I86",
+                "__X86__"
+            ],
+            "compilerPath": "",
+            "cStandard": "c99",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

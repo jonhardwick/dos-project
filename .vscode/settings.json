@@ -1,0 +1,10 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\WATCOM\\BINNT64;C:\\WATCOM\\BINNT;C:\\DOSBox-X;%PATH%",
+        "INCLUDE": "C:\\WATCOM\\H;C:\\WATCOM\\H\\NT;C:\\WATCOM\\H\\NT\\DIRECTX;C:\\WATCOM\\H\\NT\\DDK;%INCLUDE%",
+        "WATCOM": "C:\\WATCOM",
+        "EDPATH": "C:\\WATCOM\\EDDAT",
+        "WHTMLHELP": "C:\\WATCOM\\BINNT\\HELP",
+        "WIPFC": "C:\\WATCOM\\WIPFC"
+    }
+}

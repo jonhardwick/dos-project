@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DOS EXE",
+            "type": "shell",
+            "command": "wcl",
+            "args": [
+                "-bt=dos",
+                "-ms",
+                "-fo=${workspaceFolder}\\build\\main.obj",
+                "-fe=${workspaceFolder}\\build\\main.exe",
+                "-d\"_int86=int86\"",
+                "${workspaceFolder}\\src\\main.c"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Run in DOSBox-X",
+            "type": "shell",
+            "command": "dosbox-x",
+            "args": [
+                "-conf",
+                "${workspaceFolder}\\dosbox-x.conf"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "Build DOS EXE"
+        }
+    ]
+}
